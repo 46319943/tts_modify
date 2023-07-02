@@ -1,0 +1,2 @@
+python compute_embeddings.py --formatter_name aidatatang --dataset_name aidatatang --dataset_path "D:\aidatatang_200zh" --model_path "model_se.pth.tar" --config_path "config_se.json"
+python compute_embeddings.py --formatter_name aishell3 --dataset_name aishell3 --dataset_path "D:\AISHELL-3" --old_file speakers.pth --old_append
