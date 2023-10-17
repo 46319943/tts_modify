@@ -93,7 +93,8 @@ def st_cmds(root_path, meta_file=None, ignored_speakers=None):
 
     items = []
 
-    if meta_file is not None:
+    # BaseDatasetConfig() with "" meta_file will be input by load_tts_samples by default.
+    if meta_file is not None and meta_file != '':
         txt_file = os.path.join(root_path, meta_file)
         metadata = pd.read_csv(txt_file, encoding="utf-8")
         for row in metadata.itertuples():
