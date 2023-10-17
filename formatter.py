@@ -133,6 +133,7 @@ def st_cmds(root_path, meta_file=None, ignored_speakers=None):
 def magic(root_path, meta_file=None, ignored_speakers=None):
     """
     Chinese multi-speaker dataset from http://www.openslr.org/68/
+    The train meta file has mistakenly included the dev files. Directly fix it by copy the dev files into the train folder.
     """
     items = []
 
